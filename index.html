@@ -10,18 +10,18 @@
 	  	<link rel="stylesheet" type="text/css" href="css/font-awesome.min.css">
 	  	<link rel="stylesheet" type="text/css" href="css/icomoon.css">
 	  	<link rel="stylesheet" type="text/css" href="css/animate.css">
-	  	<link rel="stylesheet" type="text/css" href="css/normalize.css">
+	  	<link rel="stylesheet" type="text/css" href="normalize.css">
 	  	<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
 	  	<link rel="stylesheet" type="text/css" href="css/main.css">
 	  	<link rel="stylesheet" type="text/css" href="css/queries.css">
 	</head>
 	<body>
-		<header class="bg-img-block">
+		<header>
 			<div class="container-fluid">
 				<div class="row">
-					<div class="col-xs-12 col-md-12">
-						<nav>
-							<div role="navigation" class="navbar navbar-default">
+					<div class="col-xs-12 col-md-12" style="padding:0">
+						<nav class="bg-navegador">
+							<div role="navigation" class="navbar navbar-default navegador">
 								<div class="navbar-header">
 									<button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
 									<span class="sr-only" >Toggle navigation</span>
@@ -49,34 +49,37 @@
 					</div>
 				</div>
 				<div class="row prueba pruebagratis1">
-					<div class="col-xs-12 col-sm-6 col-md-offset-2 col-md-4 col-lg-offset-3 col-lg-3">
-						<p>prueba gratuita</p>
-						<p>Obtén un video gratis de 5 minutos</p>
+					<div class="col-xs-12 col-sm-6 col-md-offset-2 col-md-4 col-lg-offset-3 col-lg-3 vertical-align">
+						<div class="mg-auto vertical-align">
+							<p>prueba gratuita</p>
+							<p>Obtén un video gratis de 5 minutos</p>
+						</div>
+						
 					</div>
-					<div class="col-xs-12 col-sm-6 col-md-offset-2 col-md-4 col-lg-3 text-center">
-						<button>Pruebalo gratis</button>
+					<div class="col-xs-12 col-sm-6 col-md-4 col-lg-3 text-center vertical-align">
+						<button>pruebalo gratis</button>
 					</div>
 				</div>
 			</div>
 		</header>
-		<section id="servicios" class="bg-white">
-			<div class="container-fluid">
-					<div class="row">
+		<section id="servicios" class="bg-white text-center">
+			<div class="container-fluid pd-esp">
+				<div class="row">
 					<div class="col-xs-12">
 						<p class="titulo">Nuestros servicios</p>
 					</div>
 				</div>
 				<div class="row">
-					<div class="col-xs-offset-1 col-xs-10 col-md-4">
+					<div class="col-xs-offset-1 col-xs-10 col-sm-offset-2 col-sm-8 col-md-offset-0 col-md-4 col-lg-offset-0 col-lg-4 text-center">
 						<div class="servicio">
 							<i class="icon-video"></i>
 						</div>
 						<div class="aboutservice">
-							<p>Pruebalo gratis</p>
+							<p>Pruebalo <br> gratis</p>
 							<p>Obtén un primer vídeo screencast de un usuario navegando tu página.</p>
 						</div>
 					</div>
-					<div class="col-xs-offset-1 col-xs-10 col-md-4">
+					<div class="col-xs-offset-1 col-xs-10 col-sm-offset-2 col-sm-8 col-md-offset-0 col-md-4 col-lg-offset-0 col-lg-4 text-center">
 						<div class="servicio">
 							<i class="icon-clock"></i>
 						</div>
@@ -85,7 +88,7 @@
 							<p>Si te gustó;compra nuestro servicio completo que incluye 7 videos y feedback.</p>
 						</div>
 					</div>
-					<div class="col-xs-offset-1 col-xs-10 col-md-4">
+					<div class="col-xs-offset-1 col-xs-10 col-sm-offset-2 col-sm-8 col-md-offset-0 col-md-4 col-lg-offset-0 col-lg-4 text-center">
 						<div class="servicio">
 							<i class="icon-documents"></i>
 						</div>
@@ -95,7 +98,7 @@
 						</div>
 					</div>
 				</div>
-				<a class="arrow" href="index.html#ejemplouso"><img src="separador.png" alt="enlace a la siguiente sección"></a>
+				<a class="arrow" href="index.html#ejemplouso"><img src="image/separador.png" alt="enlace a la siguiente sección"></a>
 			</div>
 		</section>
 		<section id="ejemplouso">
@@ -110,8 +113,8 @@
 						<p>El objetivo de User Testing 360 es identificar situaciones confusas de los usuarios en su web y describir soluciones, que garanticen una experiencia de uso satisfactoria.</p>
 						<a href="#video"><img src="image/flecha.png" alt="reproducir video"></img></a>
 					</div>
-					<div id="video" class="col-xs-12 col-sm-offset-1 col-sm-10 col-md-6 col-lg-5 col-lg-1">
-						<iframes src="https://www.youtube.com/embed/u7MDfG9ZJTU" frameborder="0" allowfullscreen></iframe>
+					<div id="video" class="col-xs-12 col-sm-offset-1 col-sm-10 col-md-6 col-lg-5 text-left">
+						<iframe class="video" src="https://www.youtube.com/embed/u7MDfG9ZJTU" frameborder="0" allowfullscreen></iframe>
 					</div>
 				</div>
 			</div>
@@ -214,10 +217,11 @@
 
 
 		<script type="text/javascript" src="js/jquery.js"></script>
+		<script type="text/javascript" src="js/main.js"></script>
 		<script type="text/javascript" src="js/bootstrap.min.js"></script>
 		<script type="text/javascript" src="js/jquery.easing.min.js"></script>
 		
 		<script type="text/javascript" src="js/nav-scroll.js"></script>
-		<script type="text/javascript" src="js/main.js"></script>
+	
     </body>
 </html>

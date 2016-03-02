@@ -38,6 +38,9 @@ strong {
 .pr-5{
 	padding-right: 5%;
 }
+.mg-auto {
+	margin: auto;
+}
 .mg-0{
 	margin: 0;
 }
@@ -87,9 +90,9 @@ strong {
 	background-color: #323A45;
 }
 .bg-img-block {
-	background-size: cover;
+	background-size: contain;
 	background-repeat: no-repeat;
-/*	background-position: center;*/
+	background-position: center;
 }
 
 .pull-left {
@@ -97,6 +100,10 @@ strong {
 }
 .pull-right {
 	float: right;
+}
+
+.vertical-align {
+	vertical-align: middle;
 }
 
 .buttongray {
@@ -133,3 +140,7 @@ strong {
 	box-shadow: 0px 1px 3px #ccc;
 }
 /*arriba del main*/
+.sinpadding {
+	padding-left: 0;
+	padding-right: 0;
+}
