@@ -71,8 +71,11 @@ strong {
 .text-white{
 	color: white;
 }
-.text-bl{
-	color: #888;
+.text-blue {
+	color: #0473BF;
+}
+.text-gray {
+	color: #333;
 }
 .a-none-decoration{
 	text-decoration: none;

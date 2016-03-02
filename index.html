@@ -10,13 +10,13 @@
 	  	<link rel="stylesheet" type="text/css" href="css/font-awesome.min.css">
 	  	<link rel="stylesheet" type="text/css" href="css/icomoon.css">
 	  	<link rel="stylesheet" type="text/css" href="css/animate.css">
-	  	<link rel="stylesheet" type="text/css" href="normalize.css">
+	  	<link rel="stylesheet" type="text/css" href="css/normalize.css">
 	  	<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
 	  	<link rel="stylesheet" type="text/css" href="css/main.css">
 	  	<link rel="stylesheet" type="text/css" href="css/queries.css">
 	</head>
 	<body>
-		<header>
+		<header id="header">
 			<div class="container-fluid">
 				<div class="row">
 					<div class="col-xs-12 col-md-12" style="padding:0">
@@ -57,7 +57,7 @@
 						
 					</div>
 					<div class="col-xs-12 col-sm-6 col-md-4 col-lg-3 text-center vertical-align">
-						<button>pruebalo gratis</button>
+						<button><a class="boton" href="contact.html">pruebalo gratis</a></button>
 					</div>
 				</div>
 			</div>
@@ -103,29 +103,32 @@
 		</section>
 		<section id="ejemplouso">
 			<div class="container-fluid">
-				<div class="row">
-					<div class="col-xs-12 col-sm-offset-1 col-sm-10 col-md-6 col-lg-offset-1 col-lg-5">
+				<div class="row text-center">
+					<div class="col-xs-12 col-sm-offset-1 col-sm-10 col-md-6 col-lg-offset-1 col-lg-5 text-center">
 						<p class="titulo">Ejemplo de <img src="image/logo-2.jpg" alt="user testing 360"></img></p>
-						<p>En este video te damos un ejemplo de un integrante de nuestro panel evaluando la experiencia de uso de</p>
-						<p>
+						<p class="texto text-left">En este video te damos un ejemplo de un integrante de nuestro panel evaluando la experiencia de uso de</p>
+						<p class="texto text-left">
 							<a href="http://mimediamanzana.pe/">mimediamanzana.com</a>
 						</p>
-						<p>El objetivo de User Testing 360 es identificar situaciones confusas de los usuarios en su web y describir soluciones, que garanticen una experiencia de uso satisfactoria.</p>
-						<a href="#video"><img src="image/flecha.png" alt="reproducir video"></img></a>
+						<p class="texto text-left">El objetivo de User Testing 360 es identificar situaciones confusas de los usuarios en su web y describir soluciones, que garanticen una experiencia de uso satisfactoria.</p>
+						<a href="#video" class="flecha"><img src="image/flecha.png" alt="reproducir video"></img></a>
 					</div>
-					<div id="video" class="col-xs-12 col-sm-offset-1 col-sm-10 col-md-6 col-lg-5 text-left">
-						<iframe class="video" src="https://www.youtube.com/embed/u7MDfG9ZJTU" frameborder="0" allowfullscreen></iframe>
+					<div id="video" class="col-xs-12 col-sm-offset-1 col-sm-10 col-md-offset-0 col-md-6 col-lg-offseet-0 col-lg-5 text-left">
+							<iframe width="560" height="315" src="https://www.youtube.com/embed/u7MDfG9ZJTU" frameborder="0" allowfullscreen></iframe>
+
 					</div>
 				</div>
 			</div>
 		</section>
 		<section id="pasos">
-			<div class="container">
+			<div class="container-fluid">
 				<div class="row">
-					<div class="hidden-xs hidden-sm col-md-6 decoracion">
+					<div class="hidden-xs hidden-sm col-md-6 col-lg-6">
+						<div class="decoracion">
 						
+						</div>
 					</div>
-					<div class="hidden-xs hidden-sm col-md-1">
+					<div class="hidden-xs hidden-sm col-md-1 col-lg-1 icondecoration">
 						<div class="bg-icono">
 							<i class="icon-pencil text-white"></i>
 						</div>
@@ -136,8 +139,8 @@
 							<i class="icon-search text-white"></i>
 						</div>
 					</div>
-					<div class="col-xs-12 col-md-5">
-						<p class="text-gray">Lo quiero ¿Qué hago?</p>
+					<div class="col-xs-12 col-md-5 col-lg-5">
+						<p class="titulogris text-gray">Lo quiero ¿Qué hago?</p>
 						<div class="pasos">
 							<p class="subtitulo">Paso 1:envianos tu link</p>
 							<p>Al darle click al botón de prueba. Coloca tu nombre y tu correo electrónico a donde enviaremos el video y el informe con el feedback.</p>
@@ -157,14 +160,15 @@
 							<p>Recibe un combo de 7 videos y un informe detallado de las captaciones de usabilidad de tu producto.</p>
 						</div>
 					</div>
+
 				</div>
-				<a class="arrow" href="index.html#porqueusarlo"><img src="separador.png" alt="enlace a la siguiente sección"></a>
+				<a class="arrow1" href="#porqueusarlo"><img src="image/separador.png" alt="enlace a la siguiente sección"></a>
 			</div>
 		</section>
 		<section id="porqueusarlo">
-			<div class="container">
+			<div class="container-fluid">
 				<div class="row">
-					<div class="col-xs-12 col-sm-offset-1 col-sm-10 col-md-6">
+					<div class="col-xs-12 col-sm-12 col-md-6 col-lg-offset-1 col-lg-5 explicacion">
 						<p class="titulo">Por qué usar <img src="image/logo-2.jpg" alt="user testing 360"></img></p>
 						<p>En la era en la que nos encontramos, la web se ha convertido en el mejor sitio para llegar a millones de personas en segundos, pero ¿Q
 						qué pasa si el producto digital que ofreces no es bueno o no se entiende? Pierdes esta enorme oportunidad. Con <span class="text-blue">User Testing 360</span>, puedes entender la experiencias de uso de tu página o producto digital y mejorarla para que satisfaga  todas las necesidades de tus usuarios. Con <span class="text-blue">User Testing 360</span> podrás entender:</p>
@@ -175,31 +179,38 @@
 						</ul>
 						<p><span class="text-blue">"User Testing 360"</span> te ayudará a responder estas preguntas y muchas más. Es el toque final perfecto para tu página o producto final.</p>
 					</div>
-					<div class="hidden-xs hidden-sm col-md-6 decoracion2">
-						
+					<div class="hidden-xs hidden-sm col-md-6 col-lg-5">
+						<div class="decoracion2"></div>
 					</div>
 				</div>
+				
 			</div>
-			<div class="row prueba pruebagratis2">
-				<div class="col-xs-12 col-sm-6">
+			
+		</section>
+		<section>
+			<div class="prueba pruebagratis2">
+					<div class="col-xs-12 col-sm-6 text-center">
 						<p>prueba gratuita</p>
 						<p>Obtén un video gratis de 5 minutos</p>
 					</div>
-					<div class="col-xs-12 col-sm-6">
-						<button>Pruebalo gratis</button>
+					<div class="col-xs-12 col-sm-6 text-center">
+						<button><a class="boton" href="contact.html">pruebalo gratis</a></button>
 					</div>
-			</div>
+				</div>
 		</section>
 		<footer>
 			<div class="container-fluid">
 				<div class="row">
-					<div class="col-xs-12">
-						<div class="datoscontacto">
+					<div class="col-xs-6">
+						<div class="datoscontacto text-left">
 							<p class="text-white">Escribenos a:</p>
 							<p><a href="">experienciadeusuario.lab@mail.com</a></p>
 							<p>telef: 989637925</p>
 						</div>
-						<div class="der">
+						
+					</div>
+					<div class="col-xs-6">
+						<div class="text-right">
 							<div class="redes">
 								<i class="icon-facebook"></i>
 								<i class="icon-twitter"></i>
